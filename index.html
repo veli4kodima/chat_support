@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat Support</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="chat">
+		<div class="chat__top">
+			<div class="support__logo">
+				<img src="./icons/user.svg" alt="user_logo" class="support__logo-user">
+				<img src="./icons/status.svg" alt="status_img" class="support__logo-status">
+			</div>
+			<div class="support__name">
+				Техподдержка
+			</div>
+			<div class="support__buttons">
+				<div class="support__buttons-more">
+					<img src="./icons/arrow_down.svg" alt="arrow_down">
+				</div>
+				<div class="support__buttons-close">
+					<img src="./icons/close.svg" alt="close_button">
+				</div>
+			</div>
+		</div>
+		<div class="chat__body">
+			<div class="message message__user">
+				<div class="message__user-body">
+					От у меня все заказы видны ,но я даже в поиске не могу найти 7312 7313 .... И так много , просто как будто перескакивает ЦРМ
+				</div>
+				<div class="message__user-footer">
+					<div class="message__user-status">
+						<img src="./icons/line_yellow.svg" alt="status_message">
+					</div>
+					<div class="message__user-date">
+						<span class="date">29.12.20</span>
+						<span class="time">14:48</span>
+					</div>
+				</div>
+			</div>
+			<div class="message message__support">
+				<div class="message__support-body">
+					Здравствуйте. Заказы теперь будут у всех не по порядку (это нормально) будут увеличиваться на 2 и на 3 единицы это принцип работы кластера, когда используется несколько серверов для одного приложения такая технология для исключения случайной перезаписи данных. id не на что не влияет, это просто порядковый номер необходимый для работы таблицы.
+				</div>
+				<div class="message__support-footer">
+					<div class="message__support-status">
+						<img src="./icons/line_white.svg" alt="status_message">
+					</div>
+					<div class="message__support-date">
+						<span class="date">29.12.20</span>
+						<span class="time">14:48</span>
+					</div>
+				</div>
+			</div>
+			<div class="message message__user">
+				<div class="message__user-body">
+					От у меня все заказы видны ,но я даже в поиске не могу найти 7312 7313 .... И так много , просто как будто перескакивает ЦРМ
+					<div class="message__user-body-img">
+					</div>
+				</div>
+				<div class="message__user-footer">
+					<div class="message__user-status">
+						<img src="./icons/line_yellow.svg" alt="status_message">
+					</div>
+					<div class="message__user-date">
+						<span class="date">29.12.20</span>
+						<span class="time">14:48</span>
+					</div>
+				</div>
+			</div>
+			<div class="message message__support">
+				<div class="message__support-body">
+					Здравствуйте. Заказы теперь будут у всех не по порядку (это нормально) будут увеличиваться на 2 и на 3 единицы это принцип работы кластера, когда используется несколько серверов для одного приложения такая технология для исключения случайной перезаписи данных. id не на что не влияет, это просто порядковый номер необходимый для работы таблицы.
+					<div class="message__support-body-img">
+					</div>
+				</div>
+				<div class="message__support-footer">
+					<div class="message__support-status">
+						<img src="./icons/line_white.svg" alt="status_message">
+					</div>
+					<div class="message__support-date">
+						<span class="date">29.12.20</span>
+						<span class="time">14:48</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="chat__footer">
+			<form action="POST" class="chat__footer-form">
+				<div class="chat__footer-textarea">
+					<textarea class="message" type="text" placeholder="dial me"></textarea>
+					<div class="image-upload">
+						<label for="file-input">
+							<img src="./icons/paperclips.svg"/>
+						</label>
+					
+						<input id="file-input" type="file"/>
+					</div>
+				</div>
+				<button class="sendMessage">
+					<img src="./icons/send.svg" alt="download_file">
+				</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
